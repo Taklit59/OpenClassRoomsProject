@@ -1,0 +1,433 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    font-family: "Raleway", "Sans-serif";
+}
+html{
+    max-width: 1440px;
+    margin: auto;
+}
+body{
+    width: 100%;
+}
+img{
+    object-fit: cover;
+}
+main{
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+/* Début HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo{
+    width: 100px;
+    height: 45px;
+    margin: 30px 0 0 30px;
+}
+nav{
+    display: flex;
+}
+ .survol{
+    padding: 45px;
+    text-decoration: none;
+    color: black;
+    border-top: white 2px solid;
+ }
+ .survol:hover{
+    border-top: 2px solid rgb(0, 101, 252);
+    color: rgb(0, 101, 252);
+ }
+/* Fin HEADER */
+
+/* Début de la première SECTION */
+ section{
+    width: 100%;
+    font-size: 15px;
+ }
+ section h1{
+    font-size: 21px;
+    width: 90%;
+}
+/* Formulaire de recherche */
+.conteneur{
+    width: 100%;
+}
+.location{
+    background-color: #F2F2F2;
+    padding: 15px 20px;
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+}
+.iconLocation{
+    font-size: large;
+}
+.search{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 30px;
+    box-sizing: border-box;
+    width: 230px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 48px;
+}
+.rechercher{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 48px;
+}
+/* Icon cacher appartenant à la vesion mobile */
+.iconMobile{
+    display: none !important;
+}
+/* Fin de du formulaire de recherche */
+h2{
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    margin: 0 20px 10px 0;
+}
+/* Partie FILTRES des catégories */
+.menuList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.buttons{
+    display: flex;
+}
+.menuList--categ{
+    display: flex;
+    align-items: center;
+    border:  2px solid rgb(214, 214, 214);
+    border-radius: 30px;
+    padding-right: 20px;
+    margin: 0 20px 10px 0;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
+.menuList--categ:hover{
+    background-color: #f3f8ff;
+    transform: scale(1.01);
+}
+.filtres
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(222, 235, 255);
+    margin: -2px;
+    margin-right: 10px;
+}
+.icon-color{
+    color: rgb(0, 101, 252);
+    font-size: large ;
+}
+/* Fin de la partie FILTRES catégories */
+.info i{
+    font-size: 20px;
+    padding-top: 20px;
+}
+/* Début de la "SECTION 2" transformé en "DIV" pour qu'aucun "WARNING" ne soit afficher dans le W3C */
+.section2{
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+/* Partie ARTICLE */
+.section2 article{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 60%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 25px;
+}
+h3{
+    font-size: 21px;
+}
+.card{
+    width: 32%;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgb(214, 214, 214);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+.card-img{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+/* Titre de toutes les cards ce situant dans article mais aussi aside */
+h4{
+    font-size: 15px;
+    margin: 0px;
+}
+.card-desc{
+    width: 100%;
+    line-height: 3px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 20px ;
+}
+/* Partie "Étoiles Bleu" de "Hébergement" et "Les plus populaires" */
+.stars, .stars-2
+{
+    font-size: 12px;
+    color: rgb(0, 101, 252);
+}
+/* Partie "Étoiles Grises" de "Hébergement" et "Les plus populaires" */
+.greys{
+    color: #d9d9d9;
+}
+.survol-cards-heb{
+    text-decoration: none;
+    color: black;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+.section2 article #cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Lien "Afficher plus" */
+.show_more{
+    font-size: 18px;
+}
+/* Fin de la partie ARTICLE*/
+
+/* Partie ASIDE */
+.section2 aside{
+    width: 33%;
+    height: 60%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 25px;
+}
+/* DIV comprenant le titre et l'icone de l'étoile noir */
+.section2 aside .popular{
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Icone de l'étoile noir */
+.section2 aside .star{
+    display: inline-flex;
+    align-items: center;
+}
+.card-2{
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgb(214, 214, 214);
+    display: flex;
+    margin-bottom: 35px;
+}
+.card-2-img{
+    width: 35%;
+    height: 100%;
+    padding: 5px 0 5px 5px;
+    border-radius: 15px 0 0 15px;
+}
+.card-2-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+.card-2-desc{
+    width: 60%;
+    font-size: 14px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0 0 15px;
+}
+.stars-2{
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+.survol-cards-aside{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.survol-cards-aside:hover{
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+/* Fin de la partie ASIDE */
+
+/* Début de la SECTION 3 */
+.section3{
+    width: 100%;
+}
+/* Titre "Activités à Marseille */
+h5{
+    font-size: 21px;
+    padding-top: 25px;
+}
+/* DIV des 2 cards de grandes tailles identiques */
+.big-cards{
+    width: 23%;
+    height: 460px;
+    box-shadow: 4px 4px 10px rgb(214, 214, 214);
+    border-radius: 15px;
+}
+/* DIV des 2 cards de petites tailles identiques*/
+.small-cards{
+    width: 23%;
+    height: 200px;
+    box-shadow: 4px 4px 10px rgb(214, 214, 214);
+    border-radius: 15px;
+}
+/* DIV des 2 cards qui ont des grandeurs uniques*/
+.card-pomegues{
+    width: 23%;
+    height: 250px;
+    box-shadow: 4px 4px 10px rgb(214, 214, 214);
+    border-radius: 15px;
+}
+.card-frioul{
+    width: 23%;
+    height: 150px;
+    box-shadow: 4px 4px 10px rgb(214, 214, 214);
+    border-radius: 15px;
+}
+/* Dimensions des 2 images qui ont des grandeurs uniques*/
+.img-fort-de-pomegues{
+    width: 100%;
+    height: 200px;
+    padding: 0%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+.img-iles-de-frioul{
+    width: 100%;
+    height: 100px;
+    padding: 0%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+/* Dimensions des images identiques des 2 plus petites*/
+.img-small-cards{
+    width: 100%;
+    height: 150px;
+    padding: 0%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+/* Dimensions des images identiques des 2 plus grandes */
+.img-big-cards{
+    width: 100%;
+    height: 400px;
+    padding: 0%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+/* Titre de toutes les cards dans Activités à Marseille */
+h6{
+    font-size: 15px;
+    padding-left: 25px;
+    padding-top: 15px;
+    margin: 0px;
+}
+/* DIV comptenant toutes les cards */
+#activity-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 460px;
+}
+.survol-cards{
+    text-decoration: none;
+    color: black;
+}
+.big-cards:hover{
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+.small-cards:hover{
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+.card-pomegues:hover{
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+.card-frioul:hover{
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+/* Fin de la SECTION 3 */
+
+footer{
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+    background-color: #F2F2F2;
+    right: 0px;
+}
+footer h6{
+    padding-left: 0px;
+}
+.desc-footer{
+    display: flex;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.desc-unit{
+    width: 30%;
+    padding: 15px 15px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
